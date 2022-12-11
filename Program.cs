@@ -2,10 +2,14 @@
 массив из строк, длинна которого меньше либо задать на старте выполнения
 алгоритма. */
 
-Messager("Привет");
 
+Messager("Введите кол-во слов в массиве: ");
+//string [] arrayStrings = new arrayStrings [InputNumberLine()];
 
+// Функция преднозначеная для вывода сообщений
 void Messager(string message)
 {
-    Console.WriteLine(message);
+    Console.Write(message);
 }
+
+//

@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/* Написать программу, которая из имеющегося массива строк формирует 
+массив из строк, длинна которого меньше либо задать на старте выполнения
+алгоритма. */
+
+Messeger ();
+
+

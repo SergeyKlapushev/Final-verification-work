@@ -28,11 +28,13 @@ int InputNumberLine()
     return Convert.ToInt32(Console.ReadLine());
 }
 
+// Функция для заполнения массива словами
 string[] FillArray(string[] arrayStrings)
 {
     int i = 0;
-    while(i<arrayStrings.Length)
+    while (i < arrayStrings.Length)
     {
+        Messager($"Введите {i + 1}-е слово: ");
         arrayStrings[i] = Console.ReadLine();
         i++;
     }

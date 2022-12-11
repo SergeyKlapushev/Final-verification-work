@@ -6,11 +6,15 @@
 Messager("Введите кол-во слов в массиве: ");
 string[] arrayStrings = new string[InputNumberLine()];
 
-Console.WriteLine($"");
-
 FillArray(arrayStrings);
 
-Console.WriteLine($"");
+Console.WriteLine("----------");
+int x = 0;
+while(x < arrayStrings.Length)
+{
+    Console.WriteLine(arrayStrings[x]);
+    x++;
+}
 
 // Функция преднозначеная для вывода сообщений
 void Messager(string message)
@@ -26,6 +30,11 @@ int InputNumberLine()
 
 string[] FillArray(string[] arrayStrings)
 {
-    Console.WriteLine(arrayStrings.Length);
+    int i = 0;
+    while(i<arrayStrings.Length)
+    {
+        arrayStrings[i] = Console.ReadLine();
+        i++;
+    }
     return arrayStrings;
 }

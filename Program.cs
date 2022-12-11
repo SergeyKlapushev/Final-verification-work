@@ -2,6 +2,10 @@
 массив из строк, длинна которого меньше либо задать на старте выполнения
 алгоритма. */
 
-Messeger ();
+Messager("Привет");
 
 
+void Messager(string message)
+{
+    Console.WriteLine(message);
+}

@@ -75,7 +75,7 @@ void ShowResult(string[] result)
     Console.Write("-> [");
     while (i < result.Length)
     {
-        Console.Write($"{result[i]}");
+        Console.Write($"{result[i]} ");
         i++;
     }
     Console.Write("]");

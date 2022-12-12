@@ -7,8 +7,8 @@ string[] arrayStrings = new string[InputNumberLine()];
 FillArray(arrayStrings);
 ShowArray(arrayStrings);
 int countWord = CoutingWords(arrayStrings);
-string[] result = new string[arrayStrings.Length];
-result = SelectingWordsFromArray(arrayStrings);
+string[] result = new string[countWord];
+result = SelectingWordsFromArray(arrayStrings, countWord);
 ShowResult(result);
 
 
@@ -51,6 +51,7 @@ string ShowArray(string[] arrayStrings)
     return "";
 }
 
+// Функция считает кол-во слов из массива длинная которых меньше или равна 3
 int CoutingWords(string[] arrayStrings)
 {
     int countW = 0;
@@ -65,16 +66,18 @@ int CoutingWords(string[] arrayStrings)
 }
 
 // Функция выбирает слова которые содержат 3 или менее символов
-string[] SelectingWordsFromArray(string[] arrayStrings)
+string[] SelectingWordsFromArray(string[] arrayStrings, int CountW)
 {
     int i = 0;
-    string[] WordsFromArray = new string[arrayStrings.Length];
+    int x = 0;
+    string[] WordsFromArray = new string[CountW];
 
     while (i < arrayStrings.Length)
     {
         if (arrayStrings[i].Length <= 3)
         {
-            WordsFromArray[i] = arrayStrings[i];
+            WordsFromArray[x] = arrayStrings[i];
+            x++;
             i++;
         }
         else { i++; }

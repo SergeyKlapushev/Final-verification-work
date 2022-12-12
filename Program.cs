@@ -33,4 +33,15 @@ string[] FillArray(string[] arrayStrings)
     return arrayStrings;
 }
 
+// Функция выводит заполненный массив
+string ShowArray(string[] arrayStrings)
+{
+    int i = 0;
+    while (i < arrayStrings.Length)
+    {
+        Console.Write($"{arrayStrings[i]} ");
+        i++;
+    }
+    return "";
+}
 

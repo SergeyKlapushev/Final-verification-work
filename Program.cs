@@ -2,19 +2,11 @@
 массив из строк, длинна которого меньше либо задать на старте выполнения
 алгоритма. */
 
-
 Messager("Введите кол-во слов в массиве: ");
 string[] arrayStrings = new string[InputNumberLine()];
-
 FillArray(arrayStrings);
+ShowArray(arrayStrings);
 
-Console.WriteLine("----------");
-int x = 0;
-while(x < arrayStrings.Length)
-{
-    Console.WriteLine(arrayStrings[x]);
-    x++;
-}
 
 // Функция преднозначеная для вывода сообщений
 void Messager(string message)
@@ -40,3 +32,5 @@ string[] FillArray(string[] arrayStrings)
     }
     return arrayStrings;
 }
+
+

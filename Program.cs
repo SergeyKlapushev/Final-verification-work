@@ -37,11 +37,13 @@ string[] FillArray(string[] arrayStrings)
 string ShowArray(string[] arrayStrings)
 {
     int i = 0;
+    Console.Write("[");
     while (i < arrayStrings.Length)
     {
-        Console.Write($"{arrayStrings[i]} ");
+        Console.Write($"'{arrayStrings[i]}'");
         i++;
     }
+    Console.Write("] ");
     return "";
 }
 

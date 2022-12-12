@@ -8,15 +8,8 @@ FillArray(arrayStrings);
 ShowArray(arrayStrings);
 string[] result = new string[arrayStrings.Length];
 result = SelectingWordsFromArray(arrayStrings);
+ShowResult(result);
 
-int x = 0;
-Console.Write("-> [");
-while(x < result.Length)
-{
-    Console.Write($"{result[x]}");
-    x++;
-}
-Console.Write("]");
 
 // Функция преднозначеная для вывода сообщений
 void Messager(string message)
@@ -57,19 +50,33 @@ string ShowArray(string[] arrayStrings)
     return "";
 }
 
+// Функция выбирает слова которые содержат 3 или менее символов
 string[] SelectingWordsFromArray(string[] arrayStrings)
 {
     int i = 0;
     string[] WordsFromArray = new string[arrayStrings.Length];
 
-    while(i<arrayStrings.Length)
+    while (i < arrayStrings.Length)
     {
-        if (arrayStrings[i].Length <=3 )
+        if (arrayStrings[i].Length <= 3)
         {
             WordsFromArray[i] = arrayStrings[i];
             i++;
         }
-        else{i++;}
+        else { i++; }
     }
     return WordsFromArray;
+}
+
+// Функция выводит результат на экран
+void ShowResult(string[] result)
+{
+    int i = 0;
+    Console.Write("-> [");
+    while (i < result.Length)
+    {
+        Console.Write($"{result[i]}");
+        i++;
+    }
+    Console.Write("]");
 }

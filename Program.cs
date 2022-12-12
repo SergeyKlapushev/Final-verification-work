@@ -6,6 +6,7 @@ Messager("Введите кол-во слов в массиве: ");
 string[] arrayStrings = new string[InputNumberLine()];
 FillArray(arrayStrings);
 ShowArray(arrayStrings);
+int countWord = CoutingWords(arrayStrings);
 string[] result = new string[arrayStrings.Length];
 result = SelectingWordsFromArray(arrayStrings);
 ShowResult(result);
@@ -48,6 +49,19 @@ string ShowArray(string[] arrayStrings)
     }
     Console.Write("] ");
     return "";
+}
+
+int CoutingWords(string[] arrayStrings)
+{
+    int countW = 0;
+    for (int i = 0; i < arrayStrings.Length; i++)
+    {
+        if (arrayStrings[i].Length <= 3)
+        {
+            countW++;
+        }
+    }
+    return countW;
 }
 
 // Функция выбирает слова которые содержат 3 или менее символов

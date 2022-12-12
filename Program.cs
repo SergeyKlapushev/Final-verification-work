@@ -92,7 +92,11 @@ void ShowResult(string[] result)
     Console.Write("-> [");
     while (i < result.Length)
     {
-        Console.Write($"{result[i]} ");
+        if (result.Length - i == 1)
+        {
+            Console.Write($"'{result[i]}'");
+        }
+        else {Console.Write($"'{result[i]}', ");}
         i++;
     }
     Console.Write("]");

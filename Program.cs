@@ -2,9 +2,7 @@
 массив из строк, длинна которого меньше либо задать на старте выполнения
 алгоритма. */
 
-Messager("Введите кол-во слов в массиве: ");
-string[] arrayStrings = new string[InputNumberLine()];
-FillArray(arrayStrings);
+string[] arrayStrings = {"Hello", "2", "world", ":-)"};
 ShowArray(arrayStrings);
 int countWord = CoutingWords(arrayStrings);
 string[] result = new string[countWord];

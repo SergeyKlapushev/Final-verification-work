@@ -9,7 +9,7 @@ string[] result = new string[countWord];
 result = SelectingWordsFromArray(arrayStrings, countWord);
 ShowResult(result);
 
-// Функция выводит заполненный массив
+// Функция выводит массив на экан
 string ShowArray(string[] arrayStrings)
 {
     int i = 0;

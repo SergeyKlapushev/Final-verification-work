@@ -11,32 +11,6 @@ string[] result = new string[countWord];
 result = SelectingWordsFromArray(arrayStrings, countWord);
 ShowResult(result);
 
-
-// Функция преднозначеная для вывода сообщений
-void Messager(string message)
-{
-    Console.Write(message);
-}
-
-// Функция возвращает число обозначающее кол-во слов в массиве
-int InputNumberLine()
-{
-    return Convert.ToInt32(Console.ReadLine());
-}
-
-// Функция для заполнения массива словами
-string[] FillArray(string[] arrayStrings)
-{
-    int i = 0;
-    while (i < arrayStrings.Length)
-    {
-        Messager($"Введите {i + 1}-е слово: ");
-        arrayStrings[i] = Console.ReadLine();
-        i++;
-    }
-    return arrayStrings;
-}
-
 // Функция выводит заполненный массив
 string ShowArray(string[] arrayStrings)
 {
